@@ -5,7 +5,8 @@
   <version>1.0-SNAPSHOT</version>
   <inceptionYear>2008</inceptionYear>
   <properties>
-    <scala.version>2.7.0</scala.version>
+    <scala.version>2.11.6</scala.version>
+    <spark.version>2.1.0</spark.version>
   </properties>
 
   <repositories>
@@ -41,6 +42,27 @@
       <artifactId>specs</artifactId>
       <version>1.2.5</version>
       <scope>test</scope>
+    </dependency>
+    <!--spark程序依赖-->
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-core_2.11</artifactId>
+      <version>${spark.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-streaming_2.11</artifactId>
+      <version>${spark.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-hive_2.11</artifactId>
+      <version>${spark.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-sql_2.11</artifactId>
+      <version>${spark.version}</version>
     </dependency>
   </dependencies>
 
