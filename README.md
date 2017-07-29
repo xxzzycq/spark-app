@@ -1,2 +1,1 @@
-# spark
-spark源码
+1、MergeSmallFiles实现的是合并HDFS上的小文件（textfile，orc，parquet），以减少下游使用的性能和资源损耗，同时减少hadoop集群的namenode的压力。
