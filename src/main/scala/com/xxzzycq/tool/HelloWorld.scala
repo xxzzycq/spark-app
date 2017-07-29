@@ -6,5 +6,6 @@ package com.xxzzycq.tool
 object HelloWorld {
   def main(args: Array[String]): Unit = {
     System.out.print("hello ")
+    System.out.print("world ")
   }
 }
