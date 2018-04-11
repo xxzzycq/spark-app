@@ -6,7 +6,6 @@ import org.apache.spark.sql.{DataFrame, SaveMode}
   * Created by yangchangqi on 2017/5/18.
   */
 object SparkUtil {
-
   //保存parquet的文件到HDFS
   def saveDfToParquet(df : DataFrame, path : String): Unit = {
     df.write.mode(SaveMode.Overwrite).parquet(path)
