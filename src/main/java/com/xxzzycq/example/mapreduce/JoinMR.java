@@ -53,7 +53,7 @@ public class JoinMR {
             InfoBean pdBean = new InfoBean();
             List<InfoBean> orderBeans = new ArrayList<>();
             try {
-                //product 主键 不是主键需要连个ArrayList进行笛卡尔积
+                //product 主键 不是主键需要两个ArrayList进行笛卡尔积
                 for (InfoBean bean : values) {
                     if ("1".equals(bean.getFlag())) {
                         BeanUtils.copyProperties(pdBean, bean);
